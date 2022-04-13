@@ -1,0 +1,11 @@
+{
+    "attributes": [
+      {
+        "trait_type": "Tier",
+        "value": "NFT Name"
+      }
+    ],
+    "description": "Node NFT",
+    "image": "",
+    "name": "NFT"
+  }

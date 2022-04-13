@@ -1,0 +1,14 @@
+{
+  "name": "dominiumdao-smartcontracts",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.1.0"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": "https://github.com/jasonjstewart",
+  "author": "Jason Stewart",
+  "contributors": [
+    ""
+  ]
+}
