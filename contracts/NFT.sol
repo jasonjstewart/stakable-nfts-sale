@@ -1800,7 +1800,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 
-contract DominiumNftPresale is ERC721Enumerable, Ownable {
+contract NftPresale is ERC721Enumerable, Ownable {
   using Strings for uint256;
   using SafeERC20 for ERC20;
 
@@ -1843,9 +1843,9 @@ contract DominiumNftPresale is ERC721Enumerable, Ownable {
   constructor(
     ERC20 _stableCoin, // 0x2791bca1f2de4661ed88a30c99a7a9449aa84174
     address _multisigAddress, // 0x0000000000000000000000000000000000000000
-    string memory _name, // Dominium NFT
-    string memory _symbol, // DOMNFT
-    string memory _initBaseURI // https://gateway.pinata.cloud/ipfs/QmWsWYq7yht2arRro8SZdzraqADzmQQGVsLsYdcY3uwRhG/
+    string memory _name, // NFT
+    string memory _symbol, // NFT
+    string memory _initBaseURI // 
   ) ERC721(_name, _symbol) {
     stableCoin = _stableCoin; 
     multisigAddress = _multisigAddress; 
@@ -1856,47 +1856,47 @@ contract DominiumNftPresale is ERC721Enumerable, Ownable {
 
     // Initalize Marcus Aurelius NFT for Sale
     NFTTypes[nftTypesSize].cost = 20000;
-    NFTTypes[nftTypesSize].name = "Marcus Aurelius";
+    NFTTypes[nftTypesSize].name = "NFT 1";
     NFTTypes[nftTypesSize].rewardAmount = 0;
     NFTTypes[nftTypesSize].stakingCost = 0;
     NFTTypes[nftTypesSize].available = true;
-    NFTTypes[nftTypesSize].baseExtension = "Marcus.json";
+    NFTTypes[nftTypesSize].baseExtension = "NFT1.json";
     nftTypesSize++;
 
     // Initalize Alexander the Great NFT for Sale
     NFTTypes[nftTypesSize].cost = 500;
-    NFTTypes[nftTypesSize].name = "Alexander the Great";
+    NFTTypes[nftTypesSize].name = "NFT 2";
     NFTTypes[nftTypesSize].rewardAmount = 0;
     NFTTypes[nftTypesSize].stakingCost = 0;
     NFTTypes[nftTypesSize].available = true;
-    NFTTypes[nftTypesSize].baseExtension = "Alexander.json";
+    NFTTypes[nftTypesSize].baseExtension = "NFT2.json";
     nftTypesSize++;
 
     // Initalize Aristotle NFT for Sale
     NFTTypes[nftTypesSize].cost = 10000;
-    NFTTypes[nftTypesSize].name = "Aristotle";
+    NFTTypes[nftTypesSize].name = "NFT 3";
     NFTTypes[nftTypesSize].rewardAmount = 0;
     NFTTypes[nftTypesSize].stakingCost = 0;
     NFTTypes[nftTypesSize].available = false;
-    NFTTypes[nftTypesSize].baseExtension = "Aristotle.json";
+    NFTTypes[nftTypesSize].baseExtension = "NFT3.json";
     nftTypesSize++;
 
     // Initalize Plato NFT for Sale
     NFTTypes[nftTypesSize].cost = 1000;
-    NFTTypes[nftTypesSize].name = "Plato";
+    NFTTypes[nftTypesSize].name = "NFT 4";
     NFTTypes[nftTypesSize].rewardAmount = 0;
     NFTTypes[nftTypesSize].stakingCost = 0;
     NFTTypes[nftTypesSize].available = false;
-    NFTTypes[nftTypesSize].baseExtension = "Plato.json";
+    NFTTypes[nftTypesSize].baseExtension = "NFT4.json";
     nftTypesSize++;
 
     // Initalize Socrates NFT for Sale
     NFTTypes[nftTypesSize].cost = 100;
-    NFTTypes[nftTypesSize].name = "Socrates";
+    NFTTypes[nftTypesSize].name = "NFT 5";
     NFTTypes[nftTypesSize].rewardAmount = 0;
     NFTTypes[nftTypesSize].stakingCost = 0;
     NFTTypes[nftTypesSize].available = false;
-    NFTTypes[nftTypesSize].baseExtension = "Socrates.json";
+    NFTTypes[nftTypesSize].baseExtension = "NFT5.json";
     nftTypesSize++;
   }
 

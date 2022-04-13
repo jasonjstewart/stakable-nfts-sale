@@ -552,7 +552,7 @@ abstract contract Ownable is Context {
 
 pragma solidity >=0.7.0 <0.9.0;
 
-contract DomToken is ERC20, Ownable {
+contract Token is ERC20, Ownable {
     mapping(address => bool) mintingAllowed;
 
     modifier minter() {
@@ -560,7 +560,7 @@ contract DomToken is ERC20, Ownable {
         _;
     }
 
-    constructor(uint256 initialSupply) ERC20("DomToken", "DOM") {
+    constructor(uint256 initialSupply) ERC20("Token", "TKN") {
         _mint(msg.sender, initialSupply);
         mintingAllowed[msg.sender] = true; //allows multisig wallet to mint tokens
     }
